@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <script async src="https://cse.google.com/cse.js?cx=012941610575063822394:caovtwxrkrm"></script>
+<div class="gcse-search"></div> -->
+        <div id="map" style="z-index: 5;">
+            <div id="menu"><select><option>Rap</option><option>Rock</option><option>Blues</option></select></div>
+        </div>
+    <script src="./google.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+    google.load("maps", "3",{other_params:"sensor=false"});
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUbx3qPffYGzWOU4JmEqb3Msl9_HlvCEQ&callback=initMap"
+    async defer></script>
+  </body>
+  
+</html>
